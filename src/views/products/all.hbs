@@ -1,0 +1,8 @@
+{{#each products}}
+    <div class="border">
+        <h3>Producto: {{name}}</h3>
+        <p>SKU: {{sku}}</p>
+        <p>Descripción: {{description}}</p>
+        <a href="/products/delete/{{sku}}">Delete</a>
+    </div>
+{{/each}}

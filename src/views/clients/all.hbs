@@ -1,0 +1,8 @@
+{{#each clients}}
+    <div class="border">
+        <h3>Nombre: {{fullname}}</h3>
+        <p>Código postal: {{zip_code}}</p>
+        <p>Ciudad: {{city}}</p>
+        <a href="/clients/delete/{{client_id}}">Delete</a>
+    </div>
+{{/each}}

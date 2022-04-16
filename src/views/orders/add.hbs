@@ -1,0 +1,37 @@
+<main>
+    <div class="container">
+        <form action="/orders/add" method="post">
+            <div>
+                <label for="order_number">Numero de orden:</label>
+                <input type="number" name="order_number">
+            </div>
+            <div>
+                <label for="product_id">Producto:</label>
+                <select name="product_sku">
+                    <option value="pp1">Lámpara 7 colores</option>
+                    <option value="pp2">Lámpara 16 colores</option>
+                    <option value="pp3">Caja fotografica</option>
+                </select>
+            </div>
+            <div>
+                <label for="asesor">Asesor:</label>
+                <select name="asesor">
+                    <option value="asesor1">Asesor 1</option>
+                    <option value="asesor2">Asesor 2</option>
+                    <option value="asesor3">Asesor 3</option>
+                </select>
+            </div>
+            <div>
+                <label for="origin">Origen:</label>
+                <input type="text" name="origin">
+            </div>
+            <div>
+                <label for="username">Nombre de usuario:</label>
+                <input type="text" name="username">
+            </div>
+            <div>
+                <input type="submit" value="Save">
+            </div>
+        </form>
+    </div>
+</main>

@@ -1,0 +1,27 @@
+{
+  "name": "businessapp",
+  "version": "1.0.0",
+  "description": "app para manejo de ecommerce",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/app.js"
+  },
+  "keywords": [
+    "nodejs",
+    "javascrip",
+    "express",
+    "ecommerce"
+  ],
+  "author": "Fernando Castrejon <fernandocastrejonh@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "express": "^4.17.3",
+    "express-handlebars": "^6.0.5",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1",
+    "mysql-server": "^0.0.5",
+    "nodemon": "^2.0.15",
+    "path": "^0.12.7"
+  }
+}

@@ -1,0 +1,63 @@
+<main>
+    <div class="container">
+        <form action="/products/add" method="post">
+            <div>
+                <label for="sku">SKU:</label>
+                <input type="text" name="sku">
+            </div>
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" name="name">
+            </div>
+            <div>
+                <label for="description">Description:</label>
+                <textarea name="description" id="" cols="30" rows="10"></textarea>
+            </div>
+            <div>
+                <label for="image">Image:</label>
+                <input type="text" name="image">
+            </div>
+            <div>
+                <label for="width">Width:</label>
+                <input type="number" name="width">
+            </div>
+            <div>
+                <label for="height">Height:</label>
+                <input type="number" name="height">
+            </div>
+            <div>
+                <label for="personalized">Personalized:</label>
+                <select name="personalized">
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </select>
+            </div>
+            <div>
+                <label for="price">Price:</label>
+                <input type="number" name="price">
+            </div>
+            <div>
+                <label for="price_5">Price (5 pieces):</label>
+                <input type="number" name="price_5">
+            </div>
+            <div>
+                <label for="price_10">Price (10 pieces)</label>
+                <input type="number" name="price_10">
+            </div>
+            <div>
+                <label for="price_50">Price (50 pieces):</label>
+                <input type="number" name="price_50">
+            </div>
+            <div>
+                <label for="status">Status:</label>
+                <select name="status">
+                    <option value="1">Activo</option>
+                    <option value="0">Inactivo</option>
+                </select>
+            </div>
+            <div>
+                <input type="submit" value="Save">
+            </div>
+        </form>
+    </div>
+</main>

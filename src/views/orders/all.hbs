@@ -1,0 +1,8 @@
+{{#each orders}}
+    <div class="border">
+        <h3>No. orden: {{order_number}}</h3>
+        <p>Producto: {{product_sku}}</p>
+        <p>Asesor: {{asesor}}</p>
+        <a href="/orders/delete/{{order_id}}">Delete</a>
+    </div>
+{{/each}}
