@@ -31,11 +31,12 @@ app.use(require("./routes/index"));
 app.use("/products", require("./routes/products"));
 app.use("/clients", require("./routes/clients"))
 app.use("/orders", require("./routes/orders"));
+app.use("/personalization", require("./routes/personalization"));
 
 //Public
 app.use(express.static(path.resolve(__dirname, "public")))
 
 //Start server
 app.listen(app.get("port"), () => {
-    console.log("Server on port" + app.get("port"))
+    console.log("Server on port" + app.get("port"));
 })

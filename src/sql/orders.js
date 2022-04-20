@@ -43,10 +43,47 @@ const deleteOrder = (order_id) => {
     })
 }
 
+const clientOrder = (order_id) => {
+    return new Promise((resolve, reject) => {
+        const sql = `SELECT client_id FROM orders WHERE order_id=${order_id}`;
+        connection.query(sql, (err, row, fields) => {
+            (err)
+            ? reject(err)
+            : resolve(row);
+        })
+    })
+}
+
+const addClientOrder = (order_id, client_id) => {
+    return new Promise((resolve, reject) => {
+        const sql = `UPDATE orders SET client_id=${client_id} WHERE order_id=${order_id}`;
+        console.log(sql)
+        connection.query(sql, (err, row, fields) => {
+            (err)
+            ? reject(err)
+            : resolve(row);
+        })
+    })
+}
+
+const showClientOrder = (client_id) => {
+    return new Promise((resolve, reject) => {
+        const sql = `SELECT * FROM clients WHERE client_id=${client_id}`;
+        connection.query(sql, (err, row, fields) => {
+            (err)
+            ? reject(err)
+            : resolve(row);
+        })
+    })
+}
+
 module.exports = (
     {
         addOrder,
         showOrder,
-        deleteOrder
+        deleteOrder,
+        clientOrder,
+        addClientOrder,
+        showClientOrder
     }
 )

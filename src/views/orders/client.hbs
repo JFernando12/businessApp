@@ -1,0 +1,16 @@
+{{#each clients}}
+    <div class="border">
+        <h3>Nombre: {{fullname}}</h3>
+        <p>Código postal: {{zip_code}}</p>
+        <p>Ciudad: {{city}}</p>
+        <a href="/orders/client/{{../order_id}}/{{client_id}}">Seleccionar</a>
+    </div>
+{{else}}
+    {{#each client}}
+    <div class="border">
+        <h3>Nombre: {{fullname}}</h3>
+        <p>Código postal: {{zip_code}}</p>
+        <p>Ciudad: {{city}}</p>
+    </div>
+    {{/each}}
+{{/each}}
